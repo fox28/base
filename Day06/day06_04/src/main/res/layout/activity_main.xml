@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="保存图片至SD卡"
+        android:onClick="saveToSDCard"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="从SD卡读取图片"
+        android:onClick="readFromSDCard"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="保存图片至Android文件夹"
+        android:onClick="saveToAndroid"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="从Android文件夹读取图片"
+        android:onClick="readFromAndroid"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="保存图片至内存卡"
+        android:onClick="saveToInnerStorage"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="从内存卡读取图片"
+        android:onClick="readFromInnerStorage"/>
+
+    <ImageView
+        android:id="@+id/ivUcaiLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/temp"/>
+    <ImageView
+        android:id="@+id/ivUcaiLogo2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/temp"/>
+    <ImageView
+        android:id="@+id/ivUcaiLogo3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/temp"/>
+
+</LinearLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:src="@drawable/boutique"/>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="0,1,2,3,4">
+        <TableRow>
+            <ImageView
+                android:src="@drawable/btn_newgoods"/>
+            <ImageView
+                android:src="@drawable/btn_boutique"/>
+            <ImageView
+                android:src="@drawable/btn_category"/>
+            <ImageView
+                android:src="@drawable/btn_cart"/>
+            <ImageView
+                android:src="@drawable/btn_collect"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:text="新品"
+                android:gravity="center_horizontal"/>
+            <TextView
+                android:text="精品"
+                android:gravity="center_horizontal"/>
+            <TextView
+                android:text="分类"
+                android:gravity="center_horizontal"/>
+            <TextView 
+                android:text="购物车"
+                android:gravity="center_horizontal"/>
+            <TextView
+                android:text="收藏"
+                android:gravity="center_horizontal"/>
+        </TableRow>
+
+    </TableLayout>
+
+</LinearLayout>

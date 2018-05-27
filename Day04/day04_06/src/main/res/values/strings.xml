@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Day04_06</string>
+        <string name="question">
+            1.能直接由计算机硬件直接识别的是______。\n
+            A.高级语言\n
+            B.中级语言\n
+            C.汇编语言\n
+            D.机器语言
+        </string>
+
+
+</resources>

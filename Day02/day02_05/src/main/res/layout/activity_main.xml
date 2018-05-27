@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--表格布局-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1">
+        <TableRow
+            android:background="@drawable/title_bg">
+            <ImageView
+                android:src="@drawable/arrow_left"
+                android:layout_gravity="center_vertical"/>
+            <TextView
+                android:text="登录"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_horizontal"
+                android:textSize="22sp"
+                android:textColor="#f00"/>
+            <ImageView
+                android:src="@drawable/share"
+                android:layout_gravity="center_vertical"/>
+        </TableRow>
+    </TableLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1">
+        <TableRow>
+            <TextView
+                android:text="账户"
+                android:textSize="20sp"
+                android:layout_gravity="center_vertical"/>
+            <EditText
+                android:hint="1-8个字符"
+                />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:text="密码"
+                android:textSize="20sp"
+                android:layout_gravity="center_vertical"/>
+            <EditText
+                android:hint="1-10个字符"/>
+        </TableRow>
+    </TableLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:stretchColumns="0, 1">
+        <TableRow>
+            <Button
+                android:text="登录"
+                android:layout_gravity="center_horizontal"/>
+            <Button
+                android:text="注册"
+                android:layout_gravity="center_horizontal"/>
+        </TableRow>
+
+    </TableLayout>
+</LinearLayout>

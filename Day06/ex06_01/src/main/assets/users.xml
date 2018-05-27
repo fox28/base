@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<users>
+
+  <user id = "1001">
+    <name>张飞</name>
+    <password>1234</password>
+    <phone>68995577</phone>
+    <email>zhangfei@qq.com</email>
+  </user>
+
+  <user id = "1002">
+    <name>王菲</name>
+    <password>1234</password>
+    <phone>68995566</phone>
+    <email>wangfei@qq.com</email>
+  </user>
+
+</users>

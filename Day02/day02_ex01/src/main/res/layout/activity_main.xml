@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- 网格布局-->
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:columnCount="5">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_rowWeight="1"
+        android:src="@drawable/boutique"
+        android:layout_columnSpan="5"/>
+    <ImageView
+        android:src="@drawable/btn_newgoods"
+        android:layout_columnWeight="1"/>
+    <ImageView
+        android:src="@drawable/btn_boutique"
+        android:layout_columnWeight="1"/>
+    <ImageView
+        android:src="@drawable/btn_category"
+        android:layout_columnWeight="1"/>
+    <ImageView
+        android:src="@drawable/btn_cart"
+        android:layout_columnWeight="1"/>
+    <ImageView
+        android:src="@drawable/btn_collect"
+        android:layout_columnWeight="1"/>
+    <TextView
+        android:text="新品"
+        android:layout_columnWeight="1"
+        android:gravity="center_horizontal"/>
+    <TextView
+        android:text="精选"
+        android:layout_columnWeight="1"
+        android:gravity="center_horizontal"/>
+    <TextView
+        android:text="分类"
+        android:layout_columnWeight="1"
+        android:gravity="center_horizontal"/>
+    <TextView
+        android:text="购物车"
+        android:layout_columnWeight="1"
+        android:gravity="center_horizontal"/>
+    <TextView
+        android:text="收藏"
+        android:layout_columnWeight="1"
+        android:gravity="center_horizontal"/>
+
+
+</GridLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/mi_qs01"
+        android:title="第1题"/>
+
+    <item android:id="@+id/mi_qs02"
+        android:title="第2题"/>
+
+    <item android:id="@+id/mi_qs03"
+        android:title="第3题"/>
+
+    <item android:id="@+id/mi_qs04"
+        android:title="第4题"/>
+
+    <item android:id="@+id/mi_qs05"
+        android:title="第5题"/>
+
+</menu>

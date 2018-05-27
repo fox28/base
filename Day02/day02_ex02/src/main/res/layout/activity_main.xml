@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"/>
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:background="@drawable/main_menu_bg"
+        android:stretchColumns="0,1,2">
+       
+        <TableRow>
+            <ImageView
+                android:src="@drawable/main_menu_about" />
+            <ImageView />
+            <ImageView
+                android:src="@drawable/main_menu_result"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:text="关于我们"
+                android:textSize="22sp"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                />
+            <ImageView
+                android:src="@drawable/main_menu_exam"/>
+            <TextView
+                android:text="成绩榜"
+                android:textSize="22sp"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"/>
+        </TableRow>
+
+        <TableRow>
+            <ImageView
+                android:src="@drawable/main_menu_message"/>
+            <TextView />
+            <ImageView
+                android:src="@drawable/main_menu_exit"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:text="设置登录"
+                android:textSize="22sp"
+                android:layout_gravity="center_vertical"
+                android:gravity="center" />
+            <TextView />
+            <TextView
+                android:text="退出考试"
+                android:textSize="22sp"
+                android:layout_gravity="center_vertical"
+                android:gravity="center" />
+        </TableRow>
+        <TableRow></TableRow>
+    </TableLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"/>
+
+
+
+</LinearLayout>

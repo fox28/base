@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="80dp"
+        android:src="@drawable/lama01"/>
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="80dp"
+        android:src="@drawable/lama02"
+        android:layout_alignParentRight="true" />
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="80dp"
+        android:src="@drawable/lama03"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"/>
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="80dp"
+        android:src="@drawable/lama04"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        />
+    <ImageView
+        android:id="@+id/ivLama"
+        android:layout_width="60dp"
+        android:layout_height="80dp"
+        android:src="@drawable/lama05"
+        android:layout_centerInParent="true"/>
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="80dp"
+        android:src="@drawable/lama06"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        />
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="80dp"
+        android:src="@drawable/lama07"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"/>
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="80dp"
+        android:src="@drawable/lama08"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"/>
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="80dp"
+        android:src="@drawable/lama09"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"/>
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+        android:src="@drawable/lama10"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/ivLama"
+        android:layout_marginRight="5dp"/>
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+        android:src="@drawable/lama11"
+        android:layout_above="@id/ivLama"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"/>
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+        android:src="@drawable/lama13"
+        android:layout_toRightOf="@id/ivLama"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dp"/>
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+        android:src="@drawable/lama12"
+        android:layout_below="@id/ivLama"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"/>
+
+
+
+
+</RelativeLayout>

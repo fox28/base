@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="hints">
+        <item>who</item>
+        <item>what</item>
+        <item>whole</item>
+        <item>where</item>
+        <item>white</item>
+        <item>for</item>
+        <item>foreach</item>
+        <item>four</item>
+        <item>foo</item>
+        <item>foot</item>
+        <item>footable</item>
+    </string-array>
+</resources>

@@ -1,0 +1,1 @@
+include ':app', ':day07_01', ':day07_02', ':day07_03', ':day07_04', ':day07_05', ':day07_ex01', ':day07_ex02'
