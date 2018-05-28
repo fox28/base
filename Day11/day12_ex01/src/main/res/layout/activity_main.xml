@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvApp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f2e93e">
+
+        <ImageView
+            android:id="@+id/ivMoveBottom"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/bottom" />
+
+        <ImageView
+            android:id="@+id/ivMoveTop"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/ivMoveBottom"
+            android:src="@drawable/top" />
+
+        <ImageView
+            android:id="@+id/ivAddApp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/ivMoveTop"
+            android:src="@drawable/append" />
+    </RelativeLayout>
+</RelativeLayout>

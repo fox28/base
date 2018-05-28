@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:id="@+id/layoutMenu"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        >
+        <TextView
+            style="@style/menu_item_style"
+            android:id="@+id/tvNewGoods"
+            android:text="新品"
+            android:drawableTop="@drawable/menu_item_new_goods_normal"/>
+        <TextView
+            android:id="@+id/tvBoutique"
+            style="@style/menu_item_style"
+            android:drawableTop="@drawable/menu_item_boutique_normal"
+            android:text="精选" />
+
+        <TextView
+            android:id="@+id/tvCategory"
+            style="@style/menu_item_style"
+            android:drawableTop="@drawable/menu_item_category_normal"
+            android:text="分类" />
+
+        <RelativeLayout
+            android:id="@+id/layoutCart"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            >
+            <TextView
+                android:id="@+id/tvCart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:drawableTop="@drawable/menu_item_cart_normal"
+                android:text="购物车"
+                android:textSize="16sp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/bg_hint"
+                android:text="10"
+                android:textSize="12sp"/>
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tvContact"
+            style="@style/menu_item_style"
+            android:drawableTop="@drawable/menu_item_contact_normal"
+            android:text="联系人"/>
+    </LinearLayout>
+    
+    <FrameLayout
+        android:id="@+id/layoutContent"
+        android:layout_above="@id/layoutMenu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </FrameLayout>
+
+</RelativeLayout>

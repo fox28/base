@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/layout_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnOk"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:text="确定" />
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:text="取消" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/ivAppThumb"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/layout_menu"
+        android:src="@drawable/tencent_safe" />
+
+    <EditText
+        android:id="@+id/etAppName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_menu"
+        android:layout_toRightOf="@id/ivAppThumb"
+        android:text="超级安全卫士" />
+
+    <EditText
+        android:id="@+id/etAppVersion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etAppName"
+        android:layout_toRightOf="@id/ivAppThumb"
+        android:text="1.0.1" />
+
+    <EditText
+        android:id="@+id/etFileSize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etAppVersion"
+        android:layout_toRightOf="@id/ivAppThumb"
+        android:text="2587" />
+
+    <EditText
+        android:id="@+id/etAppIntro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etFileSize"
+        android:text="超级安全卫士是一款极具特色的手机杀毒软件" />
+
+
+</RelativeLayout>

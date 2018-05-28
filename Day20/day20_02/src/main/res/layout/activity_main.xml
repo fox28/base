@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="播放"
+        android:onClick="onClick"/>
+    <com.example.day20_02.FlowIndicator
+        android:id="@+id/flowIndicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        app:count="5"
+        app:space="15dp"
+        app:radius="20dp"
+        app:normal_color="#ff0"
+        app:focus_color="#f00"
+        app:focus="2"
+        android:layout_gravity="center"
+        />
+</LinearLayout>

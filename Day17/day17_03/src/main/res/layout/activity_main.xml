@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        >
+        <RadioButton
+            android:button="@null"
+            android:id="@+id/btnAlwaysContact"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="常见联系人"
+            android:gravity="center_horizontal"
+            android:textColor="@drawable/selector_menu_item"
+            android:drawableTop="@drawable/always_contact"/>
+        <RadioButton
+            android:id="@+id/btnMyContact"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="我的联系人"
+            android:gravity="center_horizontal"
+            android:textColor="@drawable/selector_menu_item"
+            android:drawableTop="@drawable/always_contact"
+            android:button="@null"/>
+        <RadioButton
+            android:id="@+id/btnStranger"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="陌生人"
+            android:gravity="center_horizontal"
+            android:textColor="@drawable/selector_menu_item"
+            android:drawableTop="@drawable/always_contact"
+            android:button="@null"/>
+
+    </RadioGroup>
+
+    <FrameLayout
+        android:id="@+id/layout_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></FrameLayout>
+</RelativeLayout>

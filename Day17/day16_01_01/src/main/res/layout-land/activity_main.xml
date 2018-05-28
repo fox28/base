@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment
+        android:id="@+id/fgIndex"
+        class="com.example.day16_01_01.fragment.IndexFragment"
+        android:layout_height="wrap_content"
+        app:layout_widthPercent="25%"
+
+        />
+    <fragment
+        android:id="@+id/fgDetails"
+        class="com.example.day16_01_01.fragment.DetailsFragment"
+        android:layout_height="wrap_content"
+        app:layout_widthPercent = "75%"
+        android:layout_toRightOf="@id/fgIndex"
+
+
+        />
+
+
+
+</android.support.percent.PercentRelativeLayout>

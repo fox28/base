@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Day17_02</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="activity01">Android提供了很多Activity的生命周期方法，比如我们常用的onCreate、onPause、onResume等。这里主要介绍粗粒度的周期方法，诸如onPostCreate、onPostResume等
+这些细粒度的周期方法可以参考Android的API文档，在你需要更细层次的控制的时候可以使用这些细粒度的方法。粗粒度的周期方法有以下几个：
+onCreate()、onStart()、onResume()、onPause()、onStop()、onDestroy()，从名字上就可以看出来这些方法在什么时候执行。</string>
+    <string name="activity02">一个任务的Activity是由栈的形式存储的，栈底的是启动整个任务的Activity，栈顶的是当前
+运行的用户可以交互的Activity，当一个activity 启动另外一个的时候，新的activity
+就被压入栈，并成为当前运行的activity。而前一个activity 仍保持在栈之中。当用户按下
+BACK 键的时候，当前activity 出栈，而前一个恢复为当前运行的activity。栈中的Activity
+永远不会重排，只会压入或弹出。
+
+任务中的所有Activity 是作为一个整体进行移动的。整个的任务（即Activity 栈）可以移到前台，或退至后台。举个例子说，比如当前任务在栈中存有四个Activity──三个在当前Activity 之下。当用户按下HOME 键的时候，回到了系统界面，然后选择了一个新的应用程序（也就是一个新任务）。则当前任务转入后台，而新任务的根Activity 显示出来。然后，用户再次回到了系统界面选择了前一个应用程序（上一个任务）。于是那个任务，带着它栈中所有的四个Activity，再一次的到了前台。当用户按下BACK 键的时候，屏幕不会回到用户刚才离开的任务。取而代之，当前任务的栈中最上面的Activity 被弹出，倒数第二个Activity 显示了出来。	    </string>
+    <string name="service">1.Service介绍和作用
+Service是Android系统中的四大组件之一，它是一种长生命周期的，没有可视化界面，运行于后台的一种服务程序。比如我们播放音乐的时候，有可能想边听音乐边干些其他事情，当退出播放音乐的应用，如果不用Service，我 们就听不到歌了，所以这时候就得用到Service了。
+
+2.Service生命周期
+Service的生命周期并不像Activity那么复杂，它只继承了onCreate(),onStart(),onDestroy()三个方法，当第一次启动Service时，先后调用了onCreate(),onStart()这两个方法，当停止Service时，则执行onDestroy()方法，这里需要注意的是，如果Service已经启动了，当我们再次启动Service时，不会在执行onCreate()方法，而是直接执行onStart()方法。	    </string>
+
+</resources>

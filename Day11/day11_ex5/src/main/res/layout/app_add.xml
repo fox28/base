@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--
+
+    final EditText etName = (EditText) layout.findViewById(R.id.etAppName);
+                final EditText etVersion = (EditText) layout.findViewById(R.id.etAppVersion);
+                final EditText etFileSize = (EditText) layout.findViewById(R.id.etFileSize);
+                final EditText etIntro = (EditText) layout.findViewById(R.id.etAppIntro);
+    -->
+    <LinearLayout
+        android:layout_marginLeft="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="软件名称"
+            android:textSize="18sp"
+            android:layout_marginTop="5dp"/>
+        <EditText
+            android:id="@+id/etAppName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginLeft="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="版本号"
+            android:textSize="18sp"
+            android:layout_marginTop="5dp"/>
+        <EditText
+            android:id="@+id/etAppVersion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginLeft="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="软件大小"
+            android:textSize="18sp"
+            android:layout_marginTop="5dp"/>
+        <EditText
+            android:id="@+id/etAppFileSize"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginLeft="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="简介"
+            android:textSize="18sp"
+            android:layout_marginTop="5dp"/>
+        <EditText
+            android:id="@+id/etAppIntro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <Button
+        android:id="@+id/btnOK"
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OK"
+        android:layout_gravity="center"
+        android:onClick="onClick"
+
+        />
+
+
+
+</LinearLayout>

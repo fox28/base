@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/ivThumb"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:src="@drawable/tencent_safe"
+        />
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="腾讯手机管家"
+        android:textSize="16sp"
+        android:textColor="#f00"
+        android:gravity="center_horizontal"
+        />
+
+</LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="phoneArr">
+        <item>13577889966</item>
+        <item>13377889966</item>
+        <item>15077889966</item>
+        <item>18077889966</item>
+        <item>13177889966</item>
+        <item>15022889966</item>
+        <item>13077889966</item>
+        <item>13166889966</item>
+        <item>15055889966</item>
+        <item>13322889966</item>
+    </string-array>
+</resources>
