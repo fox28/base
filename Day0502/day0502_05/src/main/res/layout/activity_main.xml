@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!-- 底部菜单栏-->
+    <RadioGroup
+        android:id="@+id/llMenu"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:background="#a6a3a3">
+
+        <RadioButton
+            android:id="@+id/tvNewGoods"
+            android:drawableTop="@drawable/selector_new_goods"
+            android:text="新品"
+            style="@style/style_menu_item"
+            android:onClick="onClick"
+            android:button="@null"/>
+
+        <RadioButton
+            android:id="@+id/tvBoutique"
+            android:drawableTop="@drawable/selector_boutique"
+            android:text="精品"
+            style="@style/style_menu_item"
+            android:onClick="onClick"
+            android:button="@null"/>
+
+        <RadioButton
+            android:id="@+id/tvCategory"
+            android:text="分类"
+            android:drawableTop="@drawable/selector_category"
+            style="@style/style_menu_item"
+            android:onClick="onClick"
+            android:button="@null"/>
+
+        <RadioButton
+            android:id="@+id/tvCollect"
+            android:text="收藏"
+            android:drawableTop="@drawable/selector_collect"
+            style="@style/style_menu_item"
+            android:onClick="onClick"
+            android:button="@null"/>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tvCart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:drawablePadding="8dp"
+                android:drawableTop="@drawable/selector_cart"
+                android:text="购物车"
+                android:textColor="@drawable/selector_text_color"
+                android:textSize="18sp"
+                android:onClick="onClick"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:background="#f60"
+                android:text="10"
+                android:textColor="@drawable/selector_text_color" />
+        </RelativeLayout>
+    </RadioGroup>
+</RelativeLayout>

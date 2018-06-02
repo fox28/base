@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Day0502_02</string>
+    <string name="content">	android的左右滑动在实际编程经常能用到，比如查看多张图片，左右切换tab页。早期通用做法是使用ViewFlipper，自Android 3.0之后的SDK中提供了android-support-v4包用以实现版本兼容，让老版本系统下的应用通过加入jar包实现扩展，其中有一个可以实现左右滑动的类ViewPager。
+ViewPager是android-support-v4.jar包中的一个系统控件，继承自ViewGroup，专门用以实现左右滑动切换View的效果。
+首先在Project->properties->Java Build Path->Libraries->Add External Jars中加入sdk目录下的extras/android/support/v4/android-support-v4.jar（如果找不到，则需要用sdk manager下载android support package）。加入这个jar包之后就可以使用ViewPager类了。
+然后，ViewPager的使用类似于ListView，需要有对应的Adapter进行数据绑定，实现图片切换需要继承PaperAdapter。
+创建一个适配器类继承自PagerAdapter，包含子View的集合，重写相关方法。
+</string>
+</resources>
