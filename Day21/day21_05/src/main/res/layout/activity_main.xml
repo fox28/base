@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    
+    <LinearLayout
+        android:id="@+id/layout_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        >
+        
+        <Button
+            style="@style/style_menu_item"
+            android:id="@+id/tvNewGoods"
+            android:text="新品"
+            android:drawableTop="@drawable/menu_item_new_goods_normal"
+             />
+        <Button
+            style="@style/style_menu_item"
+            android:id="@+id/tvBoutique"
+            android:text="精选"
+            android:drawableTop="@drawable/menu_item_boutique_normal"
+             />
+
+       <TextView
+           style="@style/style_menu_item"
+           android:id="@+id/tvCategory"
+           android:text="分类"
+           android:drawableTop="@drawable/menu_item_category_normal"
+            />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tvCart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:drawableTop="@drawable/menu_item_new_goods_normal"
+                android:text="购物车"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/bg_hint"
+                android:text="100" />
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/tvContacts"
+            android:text="联系人"
+            android:drawableTop="@drawable/menu_item_contact_normal"
+            style="@style/style_menu_item"
+            android:drawablePadding="10dp"/>
+
+
+
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vpGoods"
+        android:layout_above="@id/layout_menu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ccc"
+    >
+
+    <Button
+        android:id="@+id/btnHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onClick"
+        android:text="arrow走起" />
+
+    <com.example.day22_ex01.SeekBarPro
+        android:id="@+id/sbArrow1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:max="100"
+        android:progress="30"
+        android:progressDrawable="@drawable/custom_progressbar"
+        android:thumb="@drawable/arrow_right"
+        app:enableDrop="true" />
+
+    <com.example.day22_ex01.SeekBarPro
+        android:id="@+id/sbArrow2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:max="100"
+        android:progress="30"
+        android:progressDrawable="@drawable/custom_progressbar"
+        android:thumb="@drawable/arrow_right"
+        app:enableDrop="false" />
+
+</LinearLayout>

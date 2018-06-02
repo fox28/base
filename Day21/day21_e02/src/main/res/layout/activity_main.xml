@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.day21_e02.MainActivity">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="开始播放"
+        android:onClick="onStartPlay"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="停止播放"
+        android:onClick="onStopPlay"
+        />
+    <com.example.day21_e02.widget.SlideLoopView
+        android:id="@+id/slideLoopView"
+        android:layout_width="match_parent"
+        android:layout_height="500px"
+        android:layout_gravity="center_horizontal"
+        >
+
+    </com.example.day21_e02.widget.SlideLoopView>
+    <com.example.day21_e02.widget.FlowIndicator
+        android:id="@+id/indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        app:count="5"
+        app:focus="1"
+        app:separation="15dp"
+        app:radius="15dp"
+        app:normalColor="#ccc"
+        app:focusColor="#f00"
+        />
+
+</LinearLayout>

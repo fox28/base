@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.day21_e1.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/layout_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        >
+        <TextView
+            style="@style/style_menu_item"
+            android:text="P1"
+            android:id="@+id/tvP1"
+            />
+        <TextView
+            style="@style/style_menu_item"
+            android:text="P2"
+            android:id="@+id/tvP2"
+            />
+        <TextView
+            style="@style/style_menu_item"
+            android:text="P3"
+            android:id="@+id/tvP3"
+            />
+        <TextView
+            style="@style/style_menu_item"
+            android:text="P4"
+            android:id="@+id/tvP4"
+            />
+        <TextView
+            style="@style/style_menu_item"
+            android:text="P5"
+            android:id="@+id/tvP5"
+            />
+    </LinearLayout>
+
+    <com.example.day21_e1.widget.FlowIndicator
+        android:id="@+id/flowIndicator"
+        android:layout_marginBottom="5dp"
+        android:layout_marginEnd="5dp"
+
+        android:layout_above="@id/layout_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="10dp"
+        app:count="4"
+        app:space="5dp"
+        app:length="65dp"
+        app:normal_color="#36f"
+        app:focus_color="#f00"
+        />
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vpGoods"
+        android:layout_above="@id/flowIndicator"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </android.support.v4.view.ViewPager>
+
+
+
+
+</RelativeLayout>

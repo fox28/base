@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="FlowIndicator">
+        <attr name="count" format="integer"/>
+        <attr name="focus" format="integer"/>
+        <attr name="separation" format="dimension"/>
+        <attr name="radius" format="dimension"/>
+        <attr name="normalColor" format="color"/>
+        <attr name="focusColor" format="color"/>
+    </declare-styleable>
+</resources>
